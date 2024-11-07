@@ -1,14 +1,10 @@
-*{
-    margin: 50px;
-    text-decoration: none;
-}
-
 body {
     background-color: black;
     background-image: url(Imagens/Space.gif);
 }
 
 .titulo_inicial{
+    margin-top: 20px;
     color: white;
     font-weight: bold;
     text-align: center;
@@ -20,11 +16,12 @@ body {
 }
 
 .Musics {
+    margin: 60px;
     color: black;
     margin-bottom: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 60px;
 }
 
 .box-music p {
@@ -32,7 +29,7 @@ body {
     margin-top: 20px;
 }
 
-.Tunel_Infinito, .Musica {
+.Tunel_Infinito, .Eu_sou_mais_eu, .Musica{
     text-align: center;
     border-radius: 20px;
     background-color: white;
@@ -40,12 +37,53 @@ body {
     transition: background-color 0.3s, color 0.3s, border 0.3s;
 }
 
-.Tunel_Infinito:hover, .Musica:hover {
+.Tunel_Infinito:hover, .Eu_sou_mais_eu:hover, .Musica:hover{
     background-color: transparent;
     border: 2px solid white;
     color: white;
 }
 
+.rodape {
+    text-align: center;
+    position: fixed;
+    margin: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:white;
+    color: black;
+    padding: 18px;
+}
+
+.rodape p{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.rodape img{
+    margin-left: 20px;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+.LinkedIn:hover { /* LinkedIn */
+    transform: scale(1.2);
+    background-color: blue;
+    background-color: rgb(24, 58, 172);
+}
+
+.GitHub:hover { /* GitHub */
+    transform: scale(1.2);
+    border-radius: 20px;
+    background-color: silver;
+}
+
+.instagram:hover { /* Instagram */
+    transform: scale(1.2);
+    background-color: #F58529;
+    background: linear-gradient(45deg, #F58529, #DD2A7B, #8134AF, #515BD4)
+}
 
 .modal {
     display: none;
@@ -68,6 +106,10 @@ body {
     width: 80%;
     max-width: 500px;
     border-radius: 8px;
+}
+
+.modal h2{
+    text-align: center;
 }
 
 .close {
